@@ -1,4 +1,8 @@
 ---
+- name: Install
+  shell:  |
+    apt-get update && apt-get upgrade
+
 - name: Install GO
   ansible.builtin.apt:
     name: golang-go

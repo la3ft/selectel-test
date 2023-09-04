@@ -21,8 +21,8 @@ export destination_host=<ip адрес>
 ```shell
 ansible-playbook -i ansible/inventory ansible/InfluxDB.yml
 ansible-playbook -i ansible/inventory ansible/Grafana.yml
-ansible-playbook -i ansible/inventory ansible/LLAMA.yml
 ansible-playbook -i ansible/inventory ansible/LLAMA_dest.yml
+ansible-playbook -i ansible/inventory ansible/LLAMA.yml
 ```
 
 ## Описание ролей ansbile

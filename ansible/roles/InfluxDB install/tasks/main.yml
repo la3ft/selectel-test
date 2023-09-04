@@ -11,12 +11,11 @@
     systemctl unmask influxdb.service
     systemctl start influxdb
 
-- name: Add port
+- name: Change influxdb port
   shell:  |
-    influx -port 5086
+    sed -i 's/# bind-address = ":8086"/bind-address = ":5086"/g' /etc/influxdb/influxdb.conf
     systemctl restart influxdb
 
 - name: Create llama database
-  community.general.influxdb_database:
-    hostname: "localhost"
-    database_name: "llama"
+  shell:  |
+    influx -port 5086 -execute 'CREATE DATABASE llama'

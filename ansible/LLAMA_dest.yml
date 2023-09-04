@@ -1,5 +1,8 @@
 ---
 - name: Install llama
   hosts: '{{ destination_host }}'
+  become: yes
+  become_user: root
+  remote_user: ubuntu
   roles:
     - llama install

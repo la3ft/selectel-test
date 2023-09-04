@@ -17,6 +17,6 @@
     systemctl restart influxdb
 
 - name: Create llama database
-  shell:  |
-    Influx -port 5086
-    systemctl restart influxdb
+  community.general.influxdb_database:
+    hostname: "localhost"
+    database_name: "llama"

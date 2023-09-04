@@ -1,7 +1,5 @@
 ---
 - name: Install llama
-  hosts: default_host
-  become: yes
-  become_user: root
+  hosts: local
   roles:
     - llama install

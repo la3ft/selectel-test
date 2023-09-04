@@ -1,7 +1,7 @@
 ---
 - name: Update
   shell:  |
-    apt-get update && apt-get upgrade
+    apt-get update
 
 - name: Install GO
   ansible.builtin.apt:

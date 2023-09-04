@@ -17,6 +17,7 @@
 
 - name: Install
   shell:  |
+    cd llama
     mv collector /bin
     mv reflector /bin
     mv scraper /bin

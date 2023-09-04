@@ -2,7 +2,7 @@
 127.0.0.1
 
 [destination_host]
-$destination_host
+x.x.x.x
 
 [local:vars]
 ansible_connection=local

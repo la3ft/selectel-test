@@ -1,0 +1,11 @@
+[Unit]
+Description=LLAMA scraper service
+
+[Service]
+WorkingDirectory=/usr/bin
+ExecStart= /bin/scraper
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

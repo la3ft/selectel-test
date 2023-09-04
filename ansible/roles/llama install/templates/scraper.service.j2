@@ -3,7 +3,7 @@ Description=LLAMA scraper service
 
 [Service]
 WorkingDirectory=/usr/bin
-ExecStart= /bin/scraper
+ExecStart= /bin/scraper -llama.collector-hosts ${destination_host}
 Restart=on-failure
 RestartSec=10
 

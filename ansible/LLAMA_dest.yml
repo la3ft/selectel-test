@@ -1,0 +1,5 @@
+---
+- name: Install llama
+  hosts: destination_host
+  roles:
+    - llama install

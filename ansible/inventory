@@ -1,2 +1,8 @@
-[destination_host]
+[local]
 127.0.0.1
+
+[destination_host]
+$destination_host
+
+[local:vars]
+ansible_connection=local

@@ -24,18 +24,24 @@
 
 - name: Create collector daemon
   template: src=collector.service.j2 dest=/lib/systemd/system/collector.service mode=644
-#  systemd:
-#    name: collector
-#    state: started
+
+- name: Start collector service
+  systemd:
+    name: collector
+    state: started
 
 - name: Create reflector daemon
   template: src=reflector.service.j2 dest=/lib/systemd/system/reflector.service mode=644
-#  systemd:
-#    name: reflector
-#    state: started
+
+- name: Start reflector service
+  systemd:
+    name: reflector
+    state: started
 
 - name: Create scraper daemon
   template: src=scraper.service.j2 dest=/lib/systemd/system/scraper.service mode=644
-#  systemd:
-#    name: scraper
-#    state: started
+
+- name: Start scraper service
+  systemd:
+    name: scraper
+    state: started

@@ -19,6 +19,6 @@ ansible-playbook -i inventory ansible/LLAMA.yml
 ```
 
 ## Описание ролей ansbile
-- [Grafana install](/ansible/Grafana install/tasks/) - устанавливает docker и все необходимые компоненты, запускает графану в docker-контейнере;
-- [InfluxDB install](/ansible/InfluxDB install/tasks/) - устанавливает influxdb, меняет стандартный порт на 5086(стандартный для LLAMA), создаёт БД 'llama';
-- [llama install](/ansible/llama install/tasks/) - устанавливает golang-go для сборки компонентов утилиты llama, собирает исполняемые файлы, перемещает их в /bin и на основе [шаблонов](/ansible/llama install/templates) создаёт службы для работы в фоне.
+- [Grafana install](/ansible/Grafana install/tasks) - устанавливает docker и все необходимые компоненты, запускает графану в docker-контейнере;
+- [InfluxDB install](/ansible/InfluxDB install/tasks) - устанавливает influxdb, меняет стандартный порт на 5086(стандартный для LLAMA), создаёт БД 'llama';
+- [llama install](/ansible/llama install/tasks) - устанавливает golang-go для сборки компонентов утилиты llama, собирает исполняемые файлы, перемещает их в /bin и на основе [шаблонов](/ansible/llama install/templates) создаёт службы для работы в фоне.

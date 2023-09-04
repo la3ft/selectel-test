@@ -1,0 +1,27 @@
+---
+- name: Install GO
+  ansible.builtin.apt:
+    name: golang-go
+
+- name: Clone
+  ansible.builtin.git:
+    repo: https://github.com/dropbox/llama
+    dest: ./llama
+
+- name: Build
+  shell:  |
+    cd llama
+    GOOS=linux GOARCH=amd64 go build -o reflector cmd/reflector/main.go
+
+- name: Install
+  shell:  |
+    cd llama
+    mv reflector /bin
+
+- name: Create reflector daemon
+  template: src=reflector.service.j2 dest=/lib/systemd/system/reflector.service mode=644
+
+- name: Start reflector service
+  systemd:
+    name: reflector
+    state: started

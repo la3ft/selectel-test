@@ -1,8 +1,8 @@
 ---
 - name: Install llama
-  hosts: localhost
-  become: yes
-  become_user: ubuntu
+#  hosts: localhost
+#  become: yes
+#  become_user: ubuntu
 #  remote_user: ubuntu
   roles:
     - llama install

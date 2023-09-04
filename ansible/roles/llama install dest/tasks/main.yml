@@ -1,5 +1,5 @@
 ---
-- name: Install
+- name: Update
   shell:  |
     apt-get update && apt-get upgrade
 

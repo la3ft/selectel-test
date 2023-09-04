@@ -17,7 +17,11 @@ cd selectel-test
 ```shell
 export destination_host=<ip адрес>
 ```
-3. Запустить плэйбуки: 
+3. Ввести адрес удаленного хоста в ansible/invetory в группу destination_host
+```shell
+vim ansible/invetory
+```
+4. Запустить плэйбуки: 
 ```shell
 ansible-playbook -i ansible/inventory ansible/InfluxDB.yml
 ansible-playbook -i ansible/inventory ansible/Grafana.yml

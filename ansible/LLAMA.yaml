@@ -1,0 +1,8 @@
+---
+- name: Install kube-prometheus
+  hosts: localhost
+  become: yes
+  become_user: root
+  remote_user: ubuntu
+  roles:
+    - llama install

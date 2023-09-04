@@ -1,6 +1,6 @@
 ---
 - name: Install Grafana
-  hosts: localhost
+  hosts: default_host
   #  become: yes
   #  become_user: ubuntu
   #  remote_user: ubuntu

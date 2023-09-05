@@ -17,11 +17,3 @@
   shell:  |
     cd llama
     mv scraper /bin
-
-- name: Create scraper daemon
-  template: src=scraper.service.j2 dest=/lib/systemd/system/scraper.service mode=644
-
-- name: Start scraper service
-  systemd:
-    name: scraper
-    state: started

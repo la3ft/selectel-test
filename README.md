@@ -1,6 +1,6 @@
 # Репозиторий тестового задания
 
-## Доска ansible
+## Доска grafana
 Доступ стандартный - admin, admin  
 [Dashboard](http://45.92.176.106:3000/d/a911198f-d53f-473e-9cf2-488423547f12/llama-stats?orgId=1&from=now-3h&to=now)
 

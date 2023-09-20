@@ -19,7 +19,7 @@ cd selectel-test
 ```
 2. Ввести адрес удаленного хоста в ansible/invetory в группу destination_host
 ```shell
-vim ansible/invetory
+vim ansible/inventory
 ```
 3. Запустить плэйбуки: 
 ```shell

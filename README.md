@@ -28,9 +28,9 @@ ansible-playbook -i ansible/inventory ansible/Grafana.yml
 ansible-playbook -i ansible/inventory ansible/LLAMA_dest.yml
 ansible-playbook -i ansible/inventory ansible/LLAMA.yml
 ```
-4. Запустить утилиту scraper с указанием удаленного хоста:
+4. Запустить утилиту collector с указанием измененного конфига:
 ```shell
-scraper -llama.collector-hosts <ip удаленного хоста>
+collector -llama.config configs/simple_example.yaml
 ```
 5. Добавить в grafana источник данных InfluxDB, настроить дашборд на своё усмотрение.
 

@@ -36,7 +36,7 @@ vim ansible/llama/configs/simple_example.yaml
 ```shell
 collector -llama.config ansible/llama/configs/simple_example.yaml
 ```
-5. Добавить в grafana источник данных InfluxDB, настроить дашборд на своё усмотрение.
+6. Добавить в grafana источник данных InfluxDB, настроить дашборд на своё усмотрение.
 
 ## Описание ролей ansbile
 - [Grafana install](/ansible/roles/Grafana%20install/tasks/main.yml) - устанавливает docker и все необходимые компоненты, запускает графану в docker-контейнере;
